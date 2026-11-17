@@ -306,82 +306,136 @@ background-color:rgb(202, 134, 9);
           justify-content:center;
     align-items:center;
     }
-    /* Mobile Responsive */
+   
+/*modification for mobile view*/
+
 @media (max-width: 768px) {
 
-    /* Navbar */
     header {
-        flex-direction: column;
-        gap: 20px;
         padding: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
     .nav {
+        gap: 12px;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 20px;
+    }
+
+    .nav a {
+        font-size: 14px;
     }
 
     .b1 {
-        width: auto;
+        font-size: 14px;
+        padding: 10px 15px;
     }
 
-    /* Hero Section */
     .main {
-        padding: 50px 25px;
-        min-height: auto;
+        padding: 60px 25px;
+        text-align: center;
     }
 
-    .main h1 {
-        font-size: 38px;
+    .text1 {
+        font-size: 22px;
     }
 
-    .main p {
-        font-size: 16px;
+    .text1-1,
+    .text2 {
+        font-size: 36px;
+        line-height: 1.3;
     }
 
-    /* Destinations */
+    .text3,
+    .down {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
     #destinations {
-        padding: 50px 20px;
+        padding: 50px 15px;
     }
 
+    .text4 {
+        margin-top: 30px;
+        font-size: 15px;
+    }
+
+    .text5 {
+        font-size: 28px;
+    }
+
+    .text6 {
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+   
     .destination-card {
-        flex-direction: column;
         min-height: auto;
-        margin-bottom: 30px;
-    }
-
-    .destination-info,
-    .destination-image {
-        width: 100%;
+        flex-direction: column;
     }
 
     .destination-info {
-        padding: 30px 20px;
+        width: auto;
+        padding: 30px 25px;
     }
 
-    .destination-image {
-        height: 300px;
+    .city {
+        font-size: 36px;
+    }
+
+    .info {
+        font-size: 15px;
+        line-height: 1.7;
     }
 
     .destination-details {
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 20px 10px;
     }
 
-    .destination-badge {
-        transform: scale(0.8);
+    .destination-image {
+        width: 100%;
+        height: 280px;
     }
 
-    /* Previous and Next */
+    .badge {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 15px;
+    }
+
+    .badge h2 {
+        font-size: 22px;
+    }
+
+    
     .destination-controls {
+        gap: 12px;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
     }
 
-    /* Footer */
-    footer {
-        padding: 30px 20px;
+    .commbutt {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .destination-dots {
+        gap: 8px;
+    }
+
+  
+    .footer1 {
+        padding: 40px 20px;
+    }
+
+    .footer2 {
+        padding: 10px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 }
